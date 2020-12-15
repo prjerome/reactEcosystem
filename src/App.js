@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const title = 'hello';
+const title = 'Hello World';
 
 function App () {
-    return <div>{title}</div> 
-}
+    const [count, setCount] = useState(0);
+    return(
+    <div>
+        {title}
+        <button onClick={() => setCount(count +1 )}>{count}</button>
+    </div>)
+};
 
 export default App;

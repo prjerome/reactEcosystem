@@ -1,12 +1,8 @@
 import React from 'react';
-import App from './App';
 import { render, screen } from '@testing-library/react';
+import App from './App';
 
-test('App component renders', () => {
-    //Arrange & Act
-    const renderOutput = render(<App/>)
-
-    //Assert
-    expect(renderOutput).toBeTruthy();
+test('app renders', () => {
+    render(<App/>);
     screen.debug();
-})
+});
