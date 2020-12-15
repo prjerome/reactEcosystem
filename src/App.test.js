@@ -1,14 +1,12 @@
 import React from 'react';
-import { render, screen } from "@testing-library/react";
-import App from "./App"
+import App from './App';
+import { render, screen } from '@testing-library/react';
 
-describe('App', () => {
-  test('renders App component', () => {
-    // excercise and verification in one
-   render(<App />);
+test('App component renders', () => {
+    //Arrange & Act
+    const renderOutput = render(<App/>)
 
-   expect(screen.getByText('Hello World')).toBeInTheDocument();
-
+    //Assert
+    expect(renderOutput).toBeTruthy();
     screen.debug();
-  })
 })

@@ -1,10 +1,9 @@
-// setup
 import React from 'react';
 
-const title  = 'Hello World';
+const title = 'hello';
 
-function App() {
-return <div>{title}</div>
+function App () {
+    return <div>{title}</div> 
 }
 
 export default App;
