@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function SecondComponent () {
-    return(<div>Hello World</div>)
+    return(<button>Hello World</button>)
 };
 
 export default SecondComponent;
