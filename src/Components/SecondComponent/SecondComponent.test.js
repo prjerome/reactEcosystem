@@ -1,7 +1,10 @@
 /* eslint-disable no-undef */
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import SecondComponent from './SecondComponent'
+import SecondComponent from './
+SecondComponent'
+
+import userEvent from '@testing-library/user-event'
 
 test('given there is a SecondComponent, when it renders, then it does not throw', () => {
   expect(render(<SecondComponent />)).toBeTruthy()
@@ -22,16 +25,21 @@ test("given when the Second Component renders, then the screen does not contain 
   expect(screen.queryByText('Goodbye World')).not.toBeInTheDocument()
 })
 
-test("given there is a sign in button, when the user has not signed in, then is a button with the text 'Sign in'", () => {
+test("given there is a sign in button, when the user has not signed in, then there is a button with the text 'Sign in'", () => {
   render(<SecondComponent />)
   expect(screen.getByRole('button', { name: /Sign in/ })).toBeInTheDocument()
 })
 
-test("given there is a user, when the user signs in, the screen contains the text 'Signed in as'", async () => {
+test("given there is a user, when the clicks the 'Sign in' button, the screen contains the text 'Signed in as'", async () => {
   render(<SecondComponent />)
+
+  screen.debug();
+  
   expect(screen.queryByText(/Signed in as/)).not.toBeInTheDocument()
   expect(await screen.findByText(/Signed in as/)).toBeInTheDocument()
 })
+
+()
 
 /* test("given there is a user, when the user signs into the app, then the user gets feedback", async () => {
   render(<SecondComponent />);

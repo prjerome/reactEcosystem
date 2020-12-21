@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from 'react'
 
-function SecondComponent() {
+function SecondComponent () {
+  const [signIn, setSignIn] = useState('Sign in')
+
   return (
     <div>
       <h1>Hello World</h1>
-      <button>Sign in</button>
+      <button onClick={() => setSignIn('Signed in as')}>{signIn}</button>
     </div>
-  );
+  )
 }
 
-export default SecondComponent;
+export default SecondComponent
