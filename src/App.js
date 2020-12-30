@@ -1,31 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [Color, setColor] = useState("");
 
-  const [divColor, setDivColor] = useState("");
-
-  useEffect(() => (document.title = count));
-
-  const handleChange = ({ target }) => setDivColor(target.value);
+  const handleChange = ({ target }) => setColor(target.value);
 
   return (
     <div>
-      <section>
-        <input
-          type="text"
-          placeholder="Type in a color eg cyan"
-          onChange={handleChange}
-          style={{ background: divColor }}
-        />
-      </section>
-      <section>
-        <button onClick={() => setCount(count + 1)}>
-          Click me
-          <small>(Look at the browser tab title)</small>
-        </button>
-      </section>
+      <input
+        type="text"
+        placeholder="Type in a color eg cyan"
+        onChange={handleChange}
+        style={{ background: Color }}
+      />
     </div>
   );
 }
