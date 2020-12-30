@@ -1,30 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
 
-const title = 'React.js hooks demo app.';
+function App() {
+  const [count, setCount] = useState(0);
 
-function App () {
-    const [count, setCount] = useState(0);
+  const [divColor, setDivColor] = useState("");
 
-    const [divColor, setDivColor] = useState('');
+  useEffect(() => (document.title = count));
 
-    useEffect(() => document.title = count)
+  const handleChange = ({ target }) => setDivColor(target.value);
 
-    const handleChange = ({target}) => setDivColor(target.value) ;
-
-    return(
+  return (
     <div>
-         <header> <h1>{title}</h1> </header> 
-       <div className="container" style={{ background:divColor }}>
-        <section>
-            <input className="input" style={{display:'block'}}  type="text" placeholder="Type in a color eg cyan" onChange={handleChange} />
-            
-            <button style={{display:'block'}} onClick={() => setCount(count + 1 )}>Click me and observe the browser tab title change</button>
-        </section>
-        
+      <section>
+        <input
+          type="text"
+          placeholder="Type in a color eg cyan"
+          onChange={handleChange}
+          style={{ background: divColor }}
+        />
+      </section>
+      <section>
+        <button onClick={() => setCount(count + 1)}>
+          Click me
+          <small>(Look at the browser tab title)</small>
+        </button>
+      </section>
     </div>
-    </div>
-      )
-};  
+  );
+}
 
 export default App;
