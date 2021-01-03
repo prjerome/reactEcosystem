@@ -1,1 +1,1 @@
-Learning, and showcasing my knowledge, about the React ecosystem by building small demo apps: hooks, jest and react-testing library. See alt branch for TDD progress.
+Broadening my knowledge of the React ecosystem: hooks, jest and react-testing library. See alt branch for TDD progress. Hosted a talk based on this repo, see https://www.meetup.com/de-DE/reactmunich/events/275229641/
