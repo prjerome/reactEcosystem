@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactEcosystem/static/css/main.2c54ebf9.chunk.css",
+    "main.js": "/reactEcosystem/static/js/main.950f2199.chunk.js",
+    "main.js.map": "/reactEcosystem/static/js/main.950f2199.chunk.js.map",
+    "runtime-main.js": "/reactEcosystem/static/js/runtime-main.4d0b12c0.js",
+    "runtime-main.js.map": "/reactEcosystem/static/js/runtime-main.4d0b12c0.js.map",
+    "static/js/2.b95146f4.chunk.js": "/reactEcosystem/static/js/2.b95146f4.chunk.js",
+    "static/js/2.b95146f4.chunk.js.map": "/reactEcosystem/static/js/2.b95146f4.chunk.js.map",
+    "static/js/3.adb49137.chunk.js": "/reactEcosystem/static/js/3.adb49137.chunk.js",
+    "static/js/3.adb49137.chunk.js.map": "/reactEcosystem/static/js/3.adb49137.chunk.js.map",
+    "index.html": "/reactEcosystem/index.html",
+    "static/css/main.2c54ebf9.chunk.css.map": "/reactEcosystem/static/css/main.2c54ebf9.chunk.css.map",
+    "static/js/2.b95146f4.chunk.js.LICENSE.txt": "/reactEcosystem/static/js/2.b95146f4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d0b12c0.js",
+    "static/js/2.b95146f4.chunk.js",
+    "static/css/main.2c54ebf9.chunk.css",
+    "static/js/main.950f2199.chunk.js"
+  ]
+}
